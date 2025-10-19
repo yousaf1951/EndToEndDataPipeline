@@ -1,0 +1,9 @@
+{
+	"name": "az-df-lab-10142025",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e094a8bb-039f-4b67-8108-88b34ede2378",
+		"tenantId": "e0e4a6f7-bb78-455b-b10a-1da5762684de"
+	}
+}
