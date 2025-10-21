@@ -1,0 +1,23 @@
+{
+	"name": "AzSypSQLSourceDB",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "azsqllab.database.windows.net",
+			"database": "sqldbsynapse",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sqladm",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzKeyVaultSQLDB",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "myFirstSecret"
+			}
+		}
+	}
+}
