@@ -1,0 +1,10 @@
+{
+	"name": "AzDFKeyVault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://az-df-keyvault10202025.vault.azure.net/"
+		}
+	}
+}
