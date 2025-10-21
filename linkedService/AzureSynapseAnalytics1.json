@@ -1,0 +1,23 @@
+{
+	"name": "AzureSynapseAnalytics1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"server": "az-synapse-lab10212025.sql.azuresynapse.net",
+			"database": "SynapseSQLDB",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sqladminuser",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzDFKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "myFirstSecret"
+			}
+		}
+	}
+}
