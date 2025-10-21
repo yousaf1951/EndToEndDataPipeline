@@ -1,0 +1,19 @@
+{
+	"name": "CopyFromSQLToSQLDW_3fi_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQL_KV",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CopyFromSQLToSQLDW_3fi_20251021"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "azdfpipeline",
+			"table": "MainControlTable_3fi"
+		}
+	}
+}
